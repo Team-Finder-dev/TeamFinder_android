@@ -1,11 +1,9 @@
 package com.teamfinder.teamfinder
 
-import com.teamfinder.teamfinder.core.ui.BaseActivity
-import com.teamfinder.teamfinder.core.ui.InflateActivity
+import com.teamfinder.teamfinder.base.BaseActivity
 import com.teamfinder.teamfinder.databinding.ActivityMainBinding
 
-class MainActivity(inflate: InflateActivity<ActivityMainBinding>) :
-    BaseActivity<ActivityMainBinding>(inflate) {
+class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
 
     override fun initViews() {}
 

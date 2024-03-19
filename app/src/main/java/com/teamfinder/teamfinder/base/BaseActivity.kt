@@ -1,16 +1,14 @@
-package com.teamfinder.teamfinder.core.ui
+package com.teamfinder.teamfinder.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 
-
-typealias InflateActivity<T> = (LayoutInflater) -> T
-
 /**
  * Base activity, doing the same that base fragment, but adopted fir single activity
  */
+typealias InflateActivity<T> = (LayoutInflater) -> T
 
 abstract class BaseActivity<VB : ViewBinding>(
     private val inflate: InflateActivity<VB>
