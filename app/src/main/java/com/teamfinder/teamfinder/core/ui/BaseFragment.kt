@@ -12,8 +12,10 @@ import androidx.viewbinding.ViewBinding
 typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
 
 /**
- * Base fragment, inheritance from this fragment makes whole fragments the same implementation and construction.
+ * Base fragment, inheritance from which makes all fragments identical in implementation and design.
  * Also this fragment inits viewBinding by default.
+ * For subscriptions on events we need to use subscribe() method.
+ * For initialization view elements use initViews() method.
  */
 
 abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
