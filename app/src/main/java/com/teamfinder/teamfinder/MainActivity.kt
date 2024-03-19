@@ -1,4 +1,4 @@
-package com.hellcorp.teamfinder
+package com.teamfinder.teamfinder
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

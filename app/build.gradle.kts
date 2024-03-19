@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.hellcorp.teamfinder"
-    compileSdk = 34
+    namespace = "com.teamfinder.teamfinder"
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.hellcorp.teamfinder"
-        minSdk = 26
-        targetSdk = 34
+        applicationId = "com.teamfinder.teamfinder"
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 

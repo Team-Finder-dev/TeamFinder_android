@@ -1,4 +1,4 @@
-package com.hellcorp.teamfinder
+package com.teamfinder.teamfinder
 
 import org.junit.Test
 
