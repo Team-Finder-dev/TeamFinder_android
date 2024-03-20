@@ -1,10 +1,11 @@
 package com.teamfinder.teamfinder
 
-import com.teamfinder.teamfinder.base.BaseActivity
-import com.teamfinder.teamfinder.databinding.ActivityMainBinding
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding::inflate) {
-
-    override fun initViews() {}
-
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
 }
