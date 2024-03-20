@@ -38,9 +38,9 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
         subscribe()
     }
 
-    abstract fun initViews()
+    open fun initViews() = Unit
 
-    abstract fun subscribe()
+    open fun subscribe() = Unit
 
     override fun onDestroyView() {
         super.onDestroyView()
