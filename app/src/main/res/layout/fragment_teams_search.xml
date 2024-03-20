@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.searchscreen.SearchFragment">
+    tools:context=".presentation.teamssearch.TeamsSearchFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="SEARCH SCREEN" />
+        android:text="TEAMS SEARCH" />
 
 </FrameLayout>

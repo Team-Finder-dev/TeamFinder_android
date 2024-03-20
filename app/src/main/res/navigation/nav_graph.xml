@@ -19,4 +19,19 @@
         android:name="com.teamfinder.teamfinder.presentation.searchscreen.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.teamfinder.teamfinder.presentation.contacts.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/playersSearchFragment"
+        android:name="com.teamfinder.teamfinder.presentation.playerssearch.PlayersSearchFragment"
+        android:label="fragment_players_search"
+        tools:layout="@layout/fragment_players_search" />
+    <fragment
+        android:id="@+id/teamsSearchFragment"
+        android:name="com.teamfinder.teamfinder.presentation.teamssearch.TeamsSearchFragment"
+        android:label="fragment_teams_search"
+        tools:layout="@layout/fragment_teams_search" />
 </navigation>
