@@ -6,7 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.lifecycleScope
 import androidx.viewbinding.ViewBinding
+import com.teamfinder.teamfinder.navigation.NavEvent
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 
 typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
 
@@ -14,7 +18,7 @@ typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
  * Base fragment, inheritance from this fragment makes whole fragments the same implementation and construction.
  * Also this fragment inits viewBinding by default.
  */
-abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
+abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
     private val inflate: Inflate<VB>,
 ) : Fragment() {
 
@@ -40,7 +44,15 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
 
     open fun initViews() = Unit
 
-    open fun subscribe() = Unit
+    open fun subscribe() {
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewModel.state.collect { state ->
+                if (state is Fragment) {
+                    viewModel.navigate(state)
+                }
+            }
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
