@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/searchFragment"
+        android:id="@+id/teamsSearchFragment"
         android:icon="@drawable/teams_24dp"
         android:orderInCategory="1"
         android:title="@string/teams" />
     <item
-        android:id="@+id/players"
+        android:id="@+id/playersSearchFragment"
         android:icon="@drawable/players_24dp"
         android:orderInCategory="2"
         android:title="@string/players" />
     <item
-        android:id="@+id/teamFragment"
+        android:id="@+id/contactsFragment"
         android:icon="@drawable/contacts_24dp"
         android:orderInCategory="3"
         android:title="@string/contacts" />
