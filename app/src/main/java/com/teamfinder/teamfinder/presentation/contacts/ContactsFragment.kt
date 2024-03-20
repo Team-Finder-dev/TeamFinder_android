@@ -1,11 +1,15 @@
 package com.teamfinder.teamfinder.presentation.contacts
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import com.teamfinder.teamfinder.R
+import android.util.Log
+import androidx.fragment.app.viewModels
+import com.teamfinder.teamfinder.base.BaseFragment
+import com.teamfinder.teamfinder.databinding.FragmentContactsBinding
 
-class ContactsFragment : Fragment() {
+class ContactsFragment :
+    BaseFragment<FragmentContactsBinding, ContactsViewModel>(FragmentContactsBinding::inflate) {
+    override val viewModel by viewModels<ContactsViewModel>()
+
+    init {
+        Log.i("MyLog", "ContactsFragment")
+    }
 }
