@@ -5,11 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
-import com.teamfinder.teamfinder.navigation.NavEvent
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
@@ -45,11 +43,9 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
     open fun initViews() = Unit
 
     open fun subscribe() {
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewModel.state.collect { state ->
-                if (state is Fragment) {
-                    viewModel.navigate(state)
-                }
+        lifecycleScope.launch {
+            viewModel.navigationEvents.collect { event ->
+                event?.let { navigate(it) }
             }
         }
     }
@@ -57,5 +53,9 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    protected open fun navigate(fragment: Fragment) {
+        findNavController().navigate(fragment.id)
     }
 }
