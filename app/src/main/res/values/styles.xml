@@ -4,7 +4,7 @@
     <style name="Text" parent="TextAppearance.AppCompat" />
 
     <style name="Text.Display">
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Text.Display.Large">
@@ -20,7 +20,7 @@
     </style>
 
     <style name="Text.Headline">
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Text.Headline.Large">
@@ -69,7 +69,7 @@
     </style>
 
     <style name="Text.Body">
-        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Text.Body.Large">
