@@ -30,6 +30,12 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        lifecycleScope.launch {
+            viewModel.navigationEvents.collect { event ->
+                event?.let { navigate(it) }
+            }
+        }
+
         _binding = inflate.invoke(inflater, container, false)
         return binding.root
     }
@@ -42,13 +48,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
 
     open fun initViews() = Unit
 
-    open fun subscribe() {
-        lifecycleScope.launch {
-            viewModel.navigationEvents.collect { event ->
-                event?.let { navigate(it) }
-            }
-        }
-    }
+    open fun subscribe() = Unit
 
     override fun onDestroyView() {
         super.onDestroyView()
