@@ -2,6 +2,6 @@ plugins {
     `kotlin-dsl`
 }
 
-dependencies{
+dependencies {
     implementation(files(libs.javaClass.superclass.protectionDomain.codeSource.location))
 }
