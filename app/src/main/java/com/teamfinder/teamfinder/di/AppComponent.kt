@@ -1,6 +1,6 @@
 package com.teamfinder.teamfinder.di
 
-import com.teamfinder.teamfinder.MainActivity
+import com.teamfinder.teamfinder.StartFragment
 import dagger.Component
 
 @Component(
@@ -10,5 +10,5 @@ import dagger.Component
 )
 interface AppComponent {
 
-    fun inject(baseFragment: MainActivity)
+    fun inject(startFragment: StartFragment)
 }

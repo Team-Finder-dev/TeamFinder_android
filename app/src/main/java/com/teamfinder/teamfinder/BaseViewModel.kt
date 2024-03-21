@@ -3,6 +3,7 @@ package com.teamfinder.teamfinder
 import androidx.lifecycle.ViewModel
 import javax.inject.Inject
 
+// Test
 class BaseViewModel @Inject constructor() : ViewModel() {
 
     // Test
