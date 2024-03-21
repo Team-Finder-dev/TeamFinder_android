@@ -8,7 +8,8 @@ import kotlinx.coroutines.flow.StateFlow
 
 abstract class BaseViewModel : ViewModel(), NavEvent {
     private val _navigationEvents = MutableStateFlow<Fragment?>(null)
-    val navigationEvents: StateFlow<Fragment?> = _navigationEvents
+    val navigationEvents: StateFlow<Fragment?>
+        get() =  _navigationEvents
 
     override fun navigate(fragment: Fragment) {
         _navigationEvents.value = fragment
