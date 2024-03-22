@@ -10,7 +10,7 @@ tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
     parallel = true
     autoCorrect = false
     disableDefaultRuleSets = false
-    buildUponDefaultConfig = false
+    buildUponDefaultConfig = true
 
     jvmTarget = JavaVersion.valueOf(libs.versions.java.get()).toString()
 
@@ -25,7 +25,7 @@ tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
         html.required.set(true)
         txt.required.set(true)
         sarif.required.set(false)
-        md.required.set(true)
+        md.required.set(false)
     }
 
     config.setFrom(files(project.rootDir.resolve("conf/custom-detekt.yml")))
