@@ -2,7 +2,7 @@ package com.teamfinder.teamfinder.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.teamfinder.teamfinder.BaseViewModel
+import com.teamfinder.teamfinder.TestViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -15,7 +15,7 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(BaseViewModel::class)
-    abstract fun baseViewModel(baseViewModel: BaseViewModel): ViewModel
+    @ViewModelKey(TestViewModel::class)
+    abstract fun baseViewModel(baseViewModel: TestViewModel): ViewModel
 
 }

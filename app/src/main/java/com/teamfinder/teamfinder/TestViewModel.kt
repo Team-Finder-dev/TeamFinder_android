@@ -1,10 +1,10 @@
 package com.teamfinder.teamfinder
 
-import androidx.lifecycle.ViewModel
+import com.teamfinder.teamfinder.base.BaseViewModel
 import javax.inject.Inject
 
 // Test
-class BaseViewModel @Inject constructor() : ViewModel() {
+class TestViewModel @Inject constructor() : BaseViewModel() {
 
     // Test
     fun touch(): String {

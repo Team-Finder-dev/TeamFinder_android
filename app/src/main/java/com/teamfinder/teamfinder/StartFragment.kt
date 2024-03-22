@@ -8,15 +8,15 @@ import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentStartBinding
 
 // Test
-class StartFragment : BaseFragment<FragmentStartBinding, BaseViewModel>(FragmentStartBinding::inflate) {
+class StartFragment : BaseFragment<FragmentStartBinding, TestViewModel>(FragmentStartBinding::inflate) {
 
-    override lateinit var viewModel: BaseViewModel
+    override lateinit var viewModel: TestViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val factory = (requireActivity() as MainActivity).viewModelFactory
-        viewModel = ViewModelProvider(viewModelStore, factory)[BaseViewModel::class.java]
+        viewModel = ViewModelProvider(viewModelStore, factory)[TestViewModel::class.java]
     }
 
     override fun onStart() {
