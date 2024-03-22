@@ -1,10 +1,8 @@
 package com.teamfinder.teamfinder
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.NavHostFragment
 import com.teamfinder.teamfinder.databinding.ActivityMainBinding
 import javax.inject.Inject
 
