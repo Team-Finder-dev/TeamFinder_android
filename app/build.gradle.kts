@@ -52,4 +52,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.dagger.impl)
     ksp(libs.dagger.compiler)
+    implementation(libs.retrofit.impl)
+    implementation(libs.retrofit.converter)
 }

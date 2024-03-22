@@ -8,11 +8,13 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        component = DaggerAppComponent.create()
+        _component = DaggerAppComponent.create()
     }
 
     companion object {
-        lateinit var component: AppComponent
+        private lateinit var _component: AppComponent
+        val component: AppComponent
+            get() = _component
     }
 
 }
