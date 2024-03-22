@@ -8,15 +8,15 @@
     </style>
 
     <style name="Text.Display.Large">
-        <item name="android:textSize">64sp</item>
+        <item name="android:textSize">57sp</item>
     </style>
 
     <style name="Text.Display.Medium">
-        <item name="android:textSize">52sp</item>
+        <item name="android:textSize">45sp</item>
     </style>
 
     <style name="Text.Display.Small">
-        <item name="android:textSize">44sp</item>
+        <item name="android:textSize">36sp</item>
     </style>
 
     <style name="Text.Headline">
@@ -24,31 +24,31 @@
     </style>
 
     <style name="Text.Headline.Large">
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">32sp</item>
     </style>
 
     <style name="Text.Headline.Medium">
-        <item name="android:textSize">36sp</item>
+        <item name="android:textSize">28sp</item>
     </style>
 
     <style name="Text.Headline.Small">
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
     <style name="Text.Title" />
 
     <style name="Text.Title.Large">
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="Text.Title.Medium">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
     </style>
 
     <style name="Text.Title.Small">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
     </style>
 
@@ -57,15 +57,15 @@
     </style>
 
     <style name="Text.Label.Large">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="Text.Label.Medium">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="Text.Label.Small">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">11sp</item>
     </style>
 
     <style name="Text.Body">
@@ -73,15 +73,15 @@
     </style>
 
     <style name="Text.Body.Large">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="Text.Body.Medium">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="Text.Body.Small">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
 </resources>
