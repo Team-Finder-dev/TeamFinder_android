@@ -1,7 +1,7 @@
 package com.teamfinder.teamfinder.presentation.registration
 
-import androidx.lifecycle.ViewModel
+import com.teamfinder.teamfinder.base.BaseViewModel
 
 
-class RegistrationViewModel: ViewModel() {
+class RegistrationViewModel: BaseViewModel() {
 }

@@ -1,6 +1,6 @@
 package com.teamfinder.teamfinder.presentation.playerssearch
 
-import androidx.lifecycle.ViewModel
+import com.teamfinder.teamfinder.base.BaseViewModel
 
-class PlayersSearchViewModel: ViewModel() {
+class PlayersSearchViewModel: BaseViewModel() {
 }
