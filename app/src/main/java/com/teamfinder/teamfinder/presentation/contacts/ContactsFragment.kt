@@ -8,8 +8,4 @@ import com.teamfinder.teamfinder.databinding.FragmentContactsBinding
 class ContactsFragment :
     BaseFragment<FragmentContactsBinding, ContactsViewModel>(FragmentContactsBinding::inflate) {
     override val viewModel by viewModels<ContactsViewModel>()
-
-    init {
-        Log.i("MyLog", "ContactsFragment")
-    }
 }

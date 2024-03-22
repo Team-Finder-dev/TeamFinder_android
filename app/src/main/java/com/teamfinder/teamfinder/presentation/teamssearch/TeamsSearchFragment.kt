@@ -8,8 +8,4 @@ import com.teamfinder.teamfinder.databinding.FragmentTeamsSearchBinding
 class TeamsSearchFragment :
     BaseFragment<FragmentTeamsSearchBinding, TeamsViewModel>(FragmentTeamsSearchBinding::inflate) {
     override val viewModel by viewModels<TeamsViewModel>()
-
-    init {
-        Log.i("MyLog", "TeamsSearchFragment")
-    }
 }

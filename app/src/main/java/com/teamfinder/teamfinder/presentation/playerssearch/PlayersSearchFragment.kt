@@ -7,8 +7,4 @@ import com.teamfinder.teamfinder.databinding.FragmentPlayersSearchBinding
 
 class PlayersSearchFragment : BaseFragment<FragmentPlayersSearchBinding, PlayersSearchViewModel>(FragmentPlayersSearchBinding::inflate) {
     override val viewModel by viewModels<PlayersSearchViewModel>()
-
-    init {
-        Log.i("MyLog", "PlayersSearchFragment")
-    }
 }
