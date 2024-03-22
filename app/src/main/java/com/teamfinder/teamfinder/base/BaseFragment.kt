@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
+import kotlinx.coroutines.launch
 
 typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
 
@@ -14,7 +16,7 @@ typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
  * Base fragment, inheritance from this fragment makes whole fragments the same implementation and construction.
  * Also this fragment inits viewBinding by default.
  */
-abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
+abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
     private val inflate: Inflate<VB>,
 ) : Fragment() {
 
@@ -28,6 +30,12 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        lifecycleScope.launch {
+            viewModel.navigationEvents.collect { event ->
+                event?.let { navigate(it) }
+            }
+        }
+
         _binding = inflate.invoke(inflater, container, false)
         return binding.root
     }
@@ -45,5 +53,9 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    protected open fun navigate(fragment: Fragment) {
+        findNavController().navigate(fragment.id)
     }
 }
