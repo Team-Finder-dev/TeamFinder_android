@@ -1,6 +1,6 @@
 package com.teamfinder.teamfinder.presentation.contacts
 
-import androidx.lifecycle.ViewModel
+import com.teamfinder.teamfinder.base.BaseViewModel
 
-class ContactsViewModel: ViewModel() {
+class ContactsViewModel: BaseViewModel() {
 }
