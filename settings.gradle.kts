@@ -21,5 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "TeamFinder"
 include(":app")
-includeBuild("build-logic")
- 
