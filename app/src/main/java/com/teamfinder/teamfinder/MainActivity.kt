@@ -1,23 +1,24 @@
 package com.teamfinder.teamfinder
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.NavHostFragment
+import com.teamfinder.teamfinder.databinding.ActivityMainBinding
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityMainBinding
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
         App.component.inject(this)
-        // Test
-        supportFragmentManager.beginTransaction()
-            .add(R.id.fragmentContainer, StartFragment(), null)
-            .commit()
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
