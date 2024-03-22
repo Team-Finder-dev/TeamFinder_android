@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: detekt.html
-          path: app/build/outputs/apk/debug/detekt.html
+          path: ./build/reports/detekt/detekt.html
 
       - name: Assemble app
         run: ./gradlew build
