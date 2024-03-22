@@ -24,7 +24,7 @@ tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
         xml.required.set(true)
         html.required.set(true)
         txt.required.set(true)
-        sarif.required.set(false)
+        sarif.required.set(true)
         md.required.set(false)
     }
 

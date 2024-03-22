@@ -25,6 +25,11 @@ jobs:
       - name: Run detekt
         run: ./gradlew detekt $commonGradleFlags
 
+      - name: Report
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: ./build/reports/detekt/detekt.sarif
+
       - name: Assemble app
         run: ./gradlew build
 
