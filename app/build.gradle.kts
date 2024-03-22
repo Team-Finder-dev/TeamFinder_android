@@ -54,4 +54,5 @@ dependencies {
     ksp(libs.dagger.compiler)
     implementation(libs.retrofit.impl)
     implementation(libs.retrofit.converter)
+    implementation(libs.bundles.navigation)
 }
