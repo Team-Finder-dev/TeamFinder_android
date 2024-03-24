@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TeamFinder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="team_details_favorite_icon_descr">Favorite icon</string>
+    <string name="team_details_card_location_icon_descr">Location icon</string>
 </resources>
