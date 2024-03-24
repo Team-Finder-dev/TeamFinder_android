@@ -35,6 +35,7 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk
 
   detekt-report:
+    if: ${{ always() }}
     needs: assemble
     runs-on: ubuntu-latest
     steps:
