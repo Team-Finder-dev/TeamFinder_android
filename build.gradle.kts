@@ -21,10 +21,10 @@ tasks.withType<io.gitlab.arturbosch.detekt.Detekt>().configureEach {
     exclude("**/build/**")
 
     reports {
-        xml.required.set(true)
+        xml.required.set(false)
         html.required.set(true)
         txt.required.set(true)
-        sarif.required.set(true)
+        sarif.required.set(false)
         md.required.set(false)
     }
 
