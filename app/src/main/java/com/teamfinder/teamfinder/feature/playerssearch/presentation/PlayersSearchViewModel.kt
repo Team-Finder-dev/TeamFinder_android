@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.playerssearch
+package com.teamfinder.teamfinder.feature.playerssearch.presentation
 
 import com.teamfinder.teamfinder.base.BaseViewModel
 import javax.inject.Inject

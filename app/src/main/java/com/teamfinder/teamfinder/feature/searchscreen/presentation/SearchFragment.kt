@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.searchscreen
+package com.teamfinder.teamfinder.feature.searchscreen.presentation
 
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
@@ -8,13 +8,14 @@ import com.teamfinder.teamfinder.MainActivity
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentSearchBinding
+import com.teamfinder.teamfinder.di.ScreenComponent
+import com.teamfinder.teamfinder.feature.searchscreen.di.DaggerSearchComponent
 
 class SearchFragment :
     BaseFragment<FragmentSearchBinding, SearchViewModel>(FragmentSearchBinding::inflate) {
 
-    override val viewModel: SearchViewModel by lazy {
-        ViewModelProvider(viewModelStore, (requireActivity() as MainActivity).factory)[SearchViewModel::class.java]
-    }
+    override val viewModel by injectViewModel<SearchViewModel>()
+    override fun diComponent(): ScreenComponent = DaggerSearchComponent.create()
 
     private lateinit var navController: NavController
 

@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.registration
+package com.teamfinder.teamfinder.feature.registration.presentation
 
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
@@ -7,13 +7,14 @@ import com.teamfinder.teamfinder.MainActivity
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentRegistrationBinding
+import com.teamfinder.teamfinder.di.ScreenComponent
+import com.teamfinder.teamfinder.feature.registration.di.DaggerRegistrationComponent
 
 class RegistrationFragment :
     BaseFragment<FragmentRegistrationBinding, RegistrationViewModel>(FragmentRegistrationBinding::inflate) {
 
-    override val viewModel: RegistrationViewModel by lazy {
-        ViewModelProvider(viewModelStore, (requireActivity() as MainActivity).factory)[RegistrationViewModel::class.java]
-    }
+    override val viewModel by injectViewModel<RegistrationViewModel>()
+    override fun diComponent(): ScreenComponent = DaggerRegistrationComponent.create()
 
     override fun subscribe() {
         super.subscribe()

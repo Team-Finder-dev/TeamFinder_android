@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.searchscreen
+package com.teamfinder.teamfinder.feature.searchscreen.presentation
 
 import com.teamfinder.teamfinder.base.BaseViewModel
 import javax.inject.Inject
