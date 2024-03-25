@@ -3,5 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="input_backgroud">#FFFBFE</color>
+    <color name="main_white">#FFFBFE</color>
+    <color name="fragment_backgroud_green">#0F383B</color>
 </resources>
