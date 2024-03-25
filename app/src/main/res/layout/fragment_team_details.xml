@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
 
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="450dp"
 
-        android:background="@color/black"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
         app:layout_constraintBottom_toTopOf="@id/team_details_tab_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,14 +25,16 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#174043">
+            android:background="@color/dark_green">
 
             <ImageButton
                 android:id="@+id/team_details_card_star"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:contentDescription="@string/team_details_favorite_icon_descr"
                 android:src="@drawable/ic_star"
+                android:backgroundTint="@color/dark_green"
                 app:layout_constraintEnd_toStartOf="@id/team_details_card_arrow"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,8 +42,10 @@
                 android:id="@+id/team_details_card_arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:contentDescription="@string/team_details_favorite_icon_descr"
                 android:src="@drawable/ic_arrow_right"
+                android:backgroundTint="@color/dark_green"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,22 +53,60 @@
                 android:id="@+id/team_details_card_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="28sp"
                 android:textColor="@color/white"
-                tools:text="Зенит 1984"
-                app:layout_constraintTop_toBottomOf="@id/team_details_card_arrow"
+                android:textSize="28sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_arrow"
+                tools:text="Зенит 1984" />
 
             <ImageButton
                 android:id="@+id/team_details_card_location_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
                 android:contentDescription="@string/team_details_card_location_icon_descr"
                 android:src="@drawable/ic_location_pin"
-                app:layout_constraintTop_toBottomOf="@id/team_details_card_title"
+                android:backgroundTint="@color/dark_green"
+                />
+
+            <TextView
+                android:id="@+id/team_details_card_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                tools:text="Санкт-Петербург"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/team_details_card_location_flow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="team_details_card_location_icon, team_details_card_location_text"
+                app:flow_horizontalGap="4dp"
+                app:flow_horizontalStyle="packed"
+                app:flow_verticalBias="0"
+                app:flow_wrapMode="chain"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_title" />
+
+            <Button
+                android:id="@+id/team_details_card_reply_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/reply"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_location_flow"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
