@@ -17,6 +17,9 @@ java = "VERSION_17"
 
 ksp = "1.9.21-1.0.15"
 
+nav = "2.7.7"
+
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -30,7 +33,16 @@ staticAnalysis-detektCli = { module = "io.gitlab.arturbosch.detekt:detekt-cli", 
 staticAnalysis-detektFormatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 staticAnalysis-detektLibraries = { module = "io.gitlab.arturbosch.detekt:detekt-rules-libraries", version.ref = "detekt" }
 
+# Navigation
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "nav" }
+navigation = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "nav" }
+
 [bundles]
+
+navigation = [
+    "navigation-fragment",
+    "navigation"
+]
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
