@@ -34,17 +34,103 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Spinner
-        android:id="@+id/spinner_sport_type"
-        style="@style/SpinnerChar"
-        android:pointerIcon="arrow"
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_16dp"
-        android:layout_marginTop="@dimen/margin_16dp"
-        android:animateLayoutChanges="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+        app:layout_constraintEnd_toEndOf="@+id/tl_search_field"
+        app:layout_constraintStart_toStartOf="@+id/tl_search_field"
+        app:layout_constraintTop_toBottomOf="@id/tl_search_field">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/margin_16dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_search_field">
+
+            <Spinner
+                android:id="@+id/spinner_sport_type"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_position"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_format"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_player_level"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_work_leg"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_technical_characteristics"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_physical_characteristics"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+            <Spinner
+                android:id="@+id/spinner_natural_attributes"
+                style="@style/SpinnerChar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tl_search_field" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

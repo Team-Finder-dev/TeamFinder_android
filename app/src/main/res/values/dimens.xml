@@ -6,4 +6,6 @@
     <dimen name="text_input_padding_start_40dp">40dp</dimen>
 
     <dimen name="margin_16dp">16dp</dimen>
+
+    <dimen name="margin_8dp">8dp</dimen>
 </resources>

@@ -19,7 +19,7 @@
         <item>Нападающий</item>
     </string-array>
 
-    <string-array name="formet">
+    <string-array name="format">
         <item>Игровой формат*</item>
         <item>5×5</item>
         <item>8×8</item>
