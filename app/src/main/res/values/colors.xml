@@ -5,4 +5,5 @@
 
     <color name="main_white">#FFFBFE</color>
     <color name="fragment_backgroud_green">#0F383B</color>
+    <color name="item_backgroud_green">#174043</color>
 </resources>

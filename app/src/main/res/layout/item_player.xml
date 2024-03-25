@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/item_backgroud_green">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        tools:src="@tools:sample/avatars"
+        android:layout_margin="@dimen/margin_8dp"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:contentDescription="@string/avatar" />
+
+    <TextView
+        android:id="@+id/tv_position"
+        tools:text="[Защитник]"
+        android:layout_weight="1"
+        android:textColor="@color/main_white"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_date"
+            tools:text="[24.03.2024]"
+            android:textColor="@color/main_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_sport"
+                android:layout_width="wrap_content"
+                android:textColor="@color/main_white"
+                tools:text="[Футбол]"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:src="@drawable/ic_froward_5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

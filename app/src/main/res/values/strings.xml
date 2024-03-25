@@ -8,4 +8,6 @@
     <string name="search">Поиск</string>
 
 
+    <!--Content description-->
+    <string name="avatar">Аватар</string>
 </resources>
