@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sport_type">
+        <item>Спорт</item>
+        <item>Футбол</item>
+        <item>Хоккей</item>
+        <item>Баскетбол</item>
+    </string-array>
+
+    <string-array name="position"> <!--        multiple-->
+        <item>Позиция</item>
+        <item>Вратарь</item>
+        <item>ЦЗ</item>
+        <item>ЛЗ</item>
+        <item>Опорный полузащитник</item>
+        <item>Атакующий ЦЗ</item>
+        <item>Левый ПЗ</item>
+        <item>Правый ПЗ</item>
+        <item>Нападающий</item>
+    </string-array>
+
+    <string-array name="formet">
+        <item>Игровой формат*</item>
+        <item>5×5</item>
+        <item>8×8</item>
+        <item>11×11</item>
+        <item>Другой</item>
+    </string-array>
+
+    <string-array name="player_level">
+        <item>Уровень игры*</item>
+        <item>Любитель</item>
+        <item>Профессионал</item>
+    </string-array>
+
+    <string-array name="work_leg">
+        <item>Рабочая нога*</item>
+        <item>Правая</item>
+        <item>Левая</item>
+        <item>Обе</item>
+    </string-array>
+
+    <string-array name="technical_characteristics">
+        <item>Технические</item>
+        <item>Исполнение стандартов</item>
+        <item>Дриблинг</item>
+        <item>Игра в пас</item>
+        <item>Игра головой</item>
+        <item>Дальние удары</item>
+        <item>Завершение атак</item>
+        <item>Навесы</item>
+        <item>Отбор</item>
+    </string-array>
+
+    <string-array name="physical_characteristics">
+        <item>Физические</item>
+        <item>Скорость</item>
+        <item>Высносливость</item>
+        <item>Прыжок</item>
+        <item>Сила</item>
+    </string-array>
+
+    <string-array name="natural_attributes">
+        <item>Природные данные</item>
+        <item>Стартовая скорость</item>
+        <item>Ловкость</item>
+        <item>Работоспособность</item>
+    </string-array>
+
+    <string-array name="psycological_characteristics">
+        <item>Психологические</item>
+        <item>Лидерские качества</item>
+        <item>Чтение игры</item>
+        <item>Храбрость</item>
+        <item>Игра без мяча</item>
+        <item>Импровизация</item>
+        <item>Видение поля</item>
+        <item>Командная игра</item>
+        <item>Опыт игры на высоком уровне</item>
+    </string-array>
+
+</resources>
