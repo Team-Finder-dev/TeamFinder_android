@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.teamssearch
+package com.teamfinder.teamfinder.feature.teamssearch.presentation
 
 import com.teamfinder.teamfinder.base.BaseViewModel
 import javax.inject.Inject

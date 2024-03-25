@@ -9,12 +9,8 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
 
-    @Inject
-    lateinit var factory: ViewModelProvider.Factory
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        App.component.inject(this)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)

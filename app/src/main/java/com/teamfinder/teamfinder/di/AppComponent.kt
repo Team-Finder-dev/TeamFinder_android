@@ -1,6 +1,5 @@
 package com.teamfinder.teamfinder.di
 
-import com.teamfinder.teamfinder.MainActivity
 import dagger.Component
 
 @Component(
@@ -8,7 +7,4 @@ import dagger.Component
         ViewModelModule::class
     ]
 )
-interface AppComponent {
-
-    fun inject(activity: MainActivity)
-}
+interface AppComponent : ScreenComponent

@@ -2,11 +2,11 @@ package com.teamfinder.teamfinder.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.teamfinder.teamfinder.presentation.contacts.ContactsViewModel
-import com.teamfinder.teamfinder.presentation.playerssearch.PlayersSearchViewModel
-import com.teamfinder.teamfinder.presentation.registration.RegistrationViewModel
-import com.teamfinder.teamfinder.presentation.searchscreen.SearchViewModel
-import com.teamfinder.teamfinder.presentation.teamssearch.TeamsViewModel
+import com.teamfinder.teamfinder.feature.contacts.presntation.ContactsViewModel
+import com.teamfinder.teamfinder.feature.playerssearch.presentation.PlayersSearchViewModel
+import com.teamfinder.teamfinder.feature.registration.presentation.RegistrationViewModel
+import com.teamfinder.teamfinder.feature.searchscreen.presentation.SearchViewModel
+import com.teamfinder.teamfinder.feature.teamssearch.presentation.TeamsViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
