@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.di
+package com.teamfinder.teamfinder.util
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
