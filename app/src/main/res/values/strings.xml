@@ -8,6 +8,17 @@
     <string name="search">Поиск</string>
 
 
+    <!--Экран поиска игрока-->
+    <string name="sport">Спорт</string>
+    <string name="position">Позиция</string>
+    <string name="format">Игровой формат*</string>
+    <string name="player_level">Уровень игры*</string>
+    <string name="work_leg">Рабочая нога*</string>
+    <string name="technical_characteristics">Технические</string>
+    <string name="physical_characteristics">Физические</string>
+    <string name="natural_attributes">Природные данные</string>
+    <string name="psycological_characteristics">Психологические</string>
+
     <!--Content description-->
     <string name="avatar">Аватар</string>
 </resources>
