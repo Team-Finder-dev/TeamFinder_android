@@ -13,5 +13,5 @@ interface ContactsModule {
     @IntoMap
     @ViewModelKey(ContactsViewModel::class)
     @Binds
-    fun bindVM(impl: ContactsViewModel) : ViewModel
+    fun bindVM(impl: ContactsViewModel): ViewModel
 }

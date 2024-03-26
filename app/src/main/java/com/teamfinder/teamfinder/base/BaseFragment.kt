@@ -30,7 +30,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
 
     open val viewModelFactory: ViewModelProvider.Factory by lazy {
         with(diComponent()) {
-            return@with viewModelFactory
+            viewModelFactory
         }
     }
 

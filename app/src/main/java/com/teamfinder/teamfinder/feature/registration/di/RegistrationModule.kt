@@ -12,5 +12,5 @@ interface RegistrationModule {
     @IntoMap
     @ViewModelKey(RegistrationViewModel::class)
     @Binds
-    fun bindVM(impl: RegistrationViewModel) : ViewModel
+    fun bindVM(impl: RegistrationViewModel): ViewModel
 }

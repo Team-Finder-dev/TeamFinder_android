@@ -6,7 +6,7 @@ import com.teamfinder.teamfinder.di.ScreenComponent
 import com.teamfinder.teamfinder.feature.teamssearch.di.DaggerTeamsSearchComponent
 
 class TeamsSearchFragment : BaseFragment<FragmentTeamsSearchBinding, TeamsViewModel>(
-        FragmentTeamsSearchBinding::inflate
+    FragmentTeamsSearchBinding::inflate
 ) {
     override val viewModel by injectViewModel<TeamsViewModel>()
     override fun diComponent(): ScreenComponent = DaggerTeamsSearchComponent.create()

@@ -13,6 +13,6 @@ interface TeamsSearchModule {
     @IntoMap
     @ViewModelKey(TeamsViewModel::class)
     @Binds
-    fun bindVM(impl: TeamsViewModel) : ViewModel
+    fun bindVM(impl: TeamsViewModel): ViewModel
 
 }

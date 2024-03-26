@@ -13,5 +13,5 @@ interface PlayersSearchModule {
     @IntoMap
     @ViewModelKey(PlayersSearchViewModel::class)
     @Binds
-    fun bindVM(impl: PlayersSearchViewModel) : ViewModel
+    fun bindVM(impl: PlayersSearchViewModel): ViewModel
 }

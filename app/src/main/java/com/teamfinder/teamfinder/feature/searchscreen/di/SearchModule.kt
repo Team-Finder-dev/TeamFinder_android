@@ -13,6 +13,6 @@ interface SearchModule {
     @IntoMap
     @ViewModelKey(SearchViewModel::class)
     @Binds
-    fun bindVM(impl: SearchViewModel) : ViewModel
+    fun bindVM(impl: SearchViewModel): ViewModel
 
 }
