@@ -8,6 +8,24 @@
     <string name="search">Поиск</string>
 
 
+    <string name="football">Футбол</string>
+    <string name="basketball">Баскетбол</string>
+    <string name="hockey">Хоккей</string>
+    <string name="reset">Сбросить</string>
+    <string name="done">Готово</string>
+    <string name="show">Показать</string>
+
+    <!--Экран поиска игрока-->
+    <string name="sport">Спорт</string>
+    <string name="position">Позиция</string>
+    <string name="format">Игровой формат*</string>
+    <string name="player_level">Уровень игры*</string>
+    <string name="work_leg">Рабочая нога*</string>
+    <string name="technical_characteristics">Технические</string>
+    <string name="physical_characteristics">Физические</string>
+    <string name="natural_attributes">Природные данные</string>
+    <string name="psycological_characteristics">Психологические</string>
+
     <!--Content description-->
     <string name="avatar">Аватар</string>
 </resources>
