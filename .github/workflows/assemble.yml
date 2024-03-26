@@ -5,6 +5,9 @@ on:
     branches: [ "main", "dev" ]
   pull_request:
 
+env:
+  commonGradleFlags: --parallel --stacktrace --no-configuration-cache --no-daemon
+
 jobs:
   assemble:
     runs-on: ubuntu-latest
@@ -18,6 +21,16 @@ jobs:
           java-version: 17
           distribution: 'temurin'
           cache: gradle
+
+      - name: Run detekt
+        run: ./gradlew detekt $commonGradleFlags
+
+      - name: Report artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: detekt.html
+          path: ./build/reports/detekt/detekt.html
 
       - name: Assemble app
         run: ./gradlew build

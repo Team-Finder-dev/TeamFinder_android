@@ -2,17 +2,12 @@ package com.teamfinder.teamfinder
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.teamfinder.teamfinder.databinding.ActivityMainBinding
-import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
-
+    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }
