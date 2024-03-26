@@ -18,8 +18,6 @@ retrofit = "2.10.0"
 detekt = "1.23.3"
 java = "VERSION_17"
 
-ksp = "1.9.21-1.0.15"
-
 nav = "2.7.7"
 
 
