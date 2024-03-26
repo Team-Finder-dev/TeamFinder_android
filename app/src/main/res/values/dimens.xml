@@ -3,6 +3,7 @@
     <dimen name="edittext_corner_radius_8dp">8dp</dimen>
 
     <dimen name="min_padding_4dp">4dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
     <dimen name="text_input_padding_start_40dp">40dp</dimen>
 
     <dimen name="avatar_size">56dp</dimen>s
