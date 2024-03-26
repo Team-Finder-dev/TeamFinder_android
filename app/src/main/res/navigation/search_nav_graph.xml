@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_nav_graph"
+    app:startDestination="@id/teamsSearchFragment">
+    <fragment
+        android:id="@+id/teamsSearchFragment"
+        android:name="com.teamfinder.teamfinder.feature.teamssearch.presentation.TeamsSearchFragment"
+        android:label="fragment_teams_search"
+        tools:layout="@layout/fragment_teams_search" />
+    <fragment
+        android:id="@+id/playersSearchFragment"
+        android:name="com.teamfinder.teamfinder.feature.playerssearch.presentation.PlayersSearchFragment"
+        android:label="fragment_players_search"
+        tools:layout="@layout/fragment_players_search" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.teamfinder.teamfinder.feature.contacts.presntation.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+</navigation>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TeamFinder</string>
+
+
+    <string name="teams">Команды</string>
+    <string name="players">Игроки</string>
+    <string name="contacts">Контакты</string>
+
+
 </resources>
