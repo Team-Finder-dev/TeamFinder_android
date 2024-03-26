@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center"
-    android:background="@color/item_backgroud_green">
+    android:background="@color/green_light">
 
     <ImageView
         android:id="@+id/iv_avatar"
@@ -20,7 +20,7 @@
         android:id="@+id/tv_position"
         tools:text="[Защитник]"
         android:layout_weight="1"
-        android:textColor="@color/main_white"
+        android:textColor="@color/white_light"
         android:layout_width="0dp"
         android:layout_height="wrap_content"/>
 
@@ -32,7 +32,7 @@
         <TextView
             android:id="@+id/tv_date"
             tools:text="[24.03.2024]"
-            android:textColor="@color/main_white"
+            android:textColor="@color/white_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <LinearLayout
@@ -43,7 +43,7 @@
             <TextView
                 android:id="@+id/tv_sport"
                 android:layout_width="wrap_content"
-                android:textColor="@color/main_white"
+                android:textColor="@color/white_light"
                 tools:text="[Футбол]"
                 android:layout_height="wrap_content"/>
             <ImageView
