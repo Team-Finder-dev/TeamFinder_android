@@ -15,7 +15,9 @@ class SearchFragment :
     override val viewModel by injectViewModel<SearchViewModel>()
     override fun diComponent(): ScreenComponent = DaggerSearchComponent.create()
 
-    private lateinit var navController: NavController
+    private var _navController: NavController? = null
+    private val navController: NavController
+        get() = _navController!!
 
     override fun initViews() {
         super.initViews()
@@ -23,7 +25,7 @@ class SearchFragment :
     }
 
     private fun initBottomNavigationBar() {
-        navController = (childFragmentManager.findFragmentById(R.id.container_view) as NavHostFragment).navController
+        _navController = (childFragmentManager.findFragmentById(R.id.container_view) as NavHostFragment).navController
         binding.bottomNavigationView.setupWithNavController(navController)
     }
 }
