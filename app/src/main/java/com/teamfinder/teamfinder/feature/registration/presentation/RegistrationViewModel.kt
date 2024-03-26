@@ -4,5 +4,4 @@ import com.teamfinder.teamfinder.base.BaseViewModel
 import javax.inject.Inject
 
 
-class RegistrationViewModel @Inject constructor() : BaseViewModel() {
-}
+class RegistrationViewModel @Inject constructor() : BaseViewModel()

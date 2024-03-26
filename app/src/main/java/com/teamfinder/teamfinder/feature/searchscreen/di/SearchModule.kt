@@ -2,7 +2,6 @@ package com.teamfinder.teamfinder.feature.searchscreen.di
 
 import androidx.lifecycle.ViewModel
 import com.teamfinder.teamfinder.di.ViewModelKey
-import com.teamfinder.teamfinder.feature.contacts.presntation.ContactsViewModel
 import com.teamfinder.teamfinder.feature.searchscreen.presentation.SearchViewModel
 import dagger.Binds
 import dagger.Module

@@ -1,9 +1,7 @@
 package com.teamfinder.teamfinder.feature.registration.presentation
 
 import android.view.View
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.teamfinder.teamfinder.MainActivity
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentRegistrationBinding

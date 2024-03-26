@@ -1,7 +1,5 @@
 package com.teamfinder.teamfinder.feature.playerssearch.presentation
 
-import androidx.lifecycle.ViewModelProvider
-import com.teamfinder.teamfinder.MainActivity
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentPlayersSearchBinding
 import com.teamfinder.teamfinder.di.ScreenComponent

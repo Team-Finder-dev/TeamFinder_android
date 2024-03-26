@@ -1,10 +1,8 @@
 package com.teamfinder.teamfinder.feature.searchscreen.presentation
 
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.teamfinder.teamfinder.MainActivity
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentSearchBinding
