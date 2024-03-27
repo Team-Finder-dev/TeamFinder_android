@@ -120,8 +120,6 @@
 
     </androidx.cardview.widget.CardView>
 
-
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/team_details_tab_layout"
         android:layout_width="match_parent"
