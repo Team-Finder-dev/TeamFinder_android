@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/dark_green"
+    android:background="@color/green_dark"
     tools:context=".presentation.teamdetails.TeamDetailsFragment">
 
     <ImageView
@@ -33,7 +33,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/green">
+            android:background="@color/green_light">
 
             <ImageButton
                 android:id="@+id/team_details_card_star"
@@ -42,7 +42,7 @@
                 android:layout_marginTop="16dp"
                 android:contentDescription="@string/team_details_favorite_icon_descr"
                 android:src="@drawable/ic_star"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="@color/green_light"
                 app:layout_constraintEnd_toStartOf="@id/team_details_card_arrow"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="16dp"
                 android:contentDescription="@string/team_details_favorite_icon_descr"
                 android:src="@drawable/ic_arrow_right"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="@color/green_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -75,7 +75,7 @@
                 android:layout_marginEnd="4dp"
                 android:contentDescription="@string/team_details_card_location_icon_descr"
                 android:src="@drawable/ic_location_pin"
-                android:backgroundTint="@color/green"
+                android:backgroundTint="@color/green_light"
                 />
 
             <TextView
@@ -129,14 +129,29 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="24dp"
+        android:background="@color/green_dark"
         app:tabTextColor="@color/white"
         app:tabRippleColor="@color/white"
-        app:tabIndicator="@color/dark_green"
+        app:tabIndicator="@color/green_dark"
         app:tabIconTint="@color/white"
         app:tabBackground="@drawable/teamdetails_tab_shape_selector"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/team_details_card" />
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/team_details_tab_layout"/>
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/team_details_tab_layout"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/team_details_viewpager"
