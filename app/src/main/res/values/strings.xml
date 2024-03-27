@@ -15,5 +15,9 @@
     <string name="team_details_basic_gender_title">Пол</string>
     <string name="team_details_basic_tournament_title">Турнир</string>
     <string name="team_details_basic_level_title">Уровень</string>
+    <string name="team_details_info_contact_title">Контактное лицо</string>
+    <string name="team_details_info_position_title">Должность</string>
+    <string name="team_details_info_date_title">Дата создания</string>
+    <string name="team_details_info_team_title">Название команды/академии</string>
 
 </resources>
