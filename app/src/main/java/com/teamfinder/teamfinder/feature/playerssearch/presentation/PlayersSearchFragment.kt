@@ -22,9 +22,9 @@ class PlayersSearchFragment : BaseFragment<FragmentPlayersSearchBinding, Players
     }
 
     private fun showBottomSheet() {
-        val bottomSheetFragment = BottomSheetFragment(R.layout.bottom_sheet_single_selector)
-
+        val strings = resources.getTextArray(R.array.sport_type)
+        val bottomSheetFragment =
+            BottomSheetFragment(R.layout.bottom_sheet_single_selector, strings)
         bottomSheetFragment.show(parentFragmentManager, bottomSheetFragment.tag)
     }
-
 }
