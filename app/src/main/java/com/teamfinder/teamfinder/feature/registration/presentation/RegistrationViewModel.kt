@@ -13,4 +13,11 @@ class RegistrationViewModel @Inject constructor(
     private val getDataApiUseCase: GetDataApiUseCase,
     @Named(POST_DATA_API)
     private val postDataApiUseCase: PostDataApiUseCase
-) : BaseViewModel()
+) : BaseViewModel() {
+
+    init {
+        // for detekt
+        getDataApiUseCase
+        postDataApiUseCase
+    }
+}

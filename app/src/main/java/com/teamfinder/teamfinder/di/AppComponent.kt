@@ -10,6 +10,4 @@ import dagger.Component
         RepositoryModule::class
     ]
 )
-interface AppComponent {
-
-}
+interface AppComponent
