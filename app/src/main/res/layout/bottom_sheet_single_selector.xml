@@ -10,6 +10,16 @@
     app:behavior_peekHeight="@dimen/peekheight_360dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
+    <View
+        android:layout_width="@dimen/text_input_padding_start_40dp"
+        android:layout_height="@dimen/min_padding_4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_reset"
         style="@style/Text.Label.Large"
@@ -59,6 +69,7 @@
         tools:text="[Спорт]" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_32dp"
