@@ -1,9 +1,9 @@
 package com.teamfinder.teamfinder.feature.registration.di
 
+import dagger.Component
 import com.teamfinder.teamfinder.di.modules.ExternalModule
 import com.teamfinder.teamfinder.di.modules.RepositoryModule
 import com.teamfinder.teamfinder.di.ScreenComponent
-import dagger.Component
 
 @Component(
     modules = [
