@@ -4,14 +4,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import androidx.appcompat.content.res.AppCompatResources
-import androidx.fragment.app.viewModels
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentTeamDetailsBinding
 import com.teamfinder.teamfinder.di.ScreenComponent
-import com.teamfinder.teamfinder.feature.searchscreen.presentation.SearchViewModel
 import com.teamfinder.teamfinder.feature.teamdetails.di.DaggerTeamDetailsComponent
 
 class TeamDetailsFragment :
@@ -67,9 +65,13 @@ class TeamDetailsFragment :
                 removeTabsIconMargins()
             }
 
-            override fun onTabUnselected(p0: TabLayout.Tab?) { }
+            override fun onTabUnselected(p0: TabLayout.Tab?) {
+                removeTabsIconMargins()
+            }
 
-            override fun onTabReselected(p0: TabLayout.Tab?) { }
+            override fun onTabReselected(p0: TabLayout.Tab?) {
+                removeTabsIconMargins()
+            }
 
         })
     }
