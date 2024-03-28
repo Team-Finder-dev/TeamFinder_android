@@ -8,6 +8,7 @@
     <color name="white">#FFFFFF</color>
     <color name="white_light">#F8F8F8</color>
     <color name="white_lightest">#FFFBFE</color>
+    <color name="white_pink">#FFF8F5</color>
 
     <color name="green_light">#174043</color>
     <color name="green_medium">#0F383B</color>
