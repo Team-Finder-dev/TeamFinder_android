@@ -12,14 +12,17 @@ appcompat = "1.6.1"
 material = "1.11.0"
 activity = "1.8.2"
 constraintlayout = "2.1.4"
+dagger = "2.48.1"
+ksp = "1.9.22-1.0.17"
+retrofit = "2.10.0"
 detekt = "1.23.3"
 java = "VERSION_17"
-ksp = "1.9.22-1.0.17"
 nav = "2.7.7"
 legacySupportV4 = "1.0.0"
 lifecycleLivedataKtx = "2.7.0"
 lifecycleViewmodelKtx = "2.7.0"
 fragmentKtx = "1.6.2"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
