@@ -5,9 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
+import com.teamfinder.teamfinder.di.ScreenComponent
 import kotlinx.coroutines.launch
 
 typealias Inflate<T> = (LayoutInflater, ViewGroup?, Boolean) -> T
@@ -24,6 +27,18 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
     protected val binding: VB get() = _binding!!
 
     abstract val viewModel: VM
+
+    open val viewModelFactory: ViewModelProvider.Factory by lazy {
+        with(diComponent()) {
+            viewModelFactory
+        }
+    }
+
+    protected abstract fun diComponent(): ScreenComponent
+
+    inline fun <reified VM : BaseViewModel> injectViewModel() = viewModels<VM>(
+        factoryProducer = { viewModelFactory }
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater,

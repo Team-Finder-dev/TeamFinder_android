@@ -6,17 +6,17 @@
     app:startDestination="@id/teamDetailsFragment">
     <fragment
         android:id="@+id/teamsSearchFragment"
-        android:name="com.teamfinder.teamfinder.presentation.teamssearch.TeamsSearchFragment"
+        android:name="com.teamfinder.teamfinder.feature.teamssearch.presentation.TeamsSearchFragment"
         android:label="fragment_teams_search"
         tools:layout="@layout/fragment_teams_search" />
     <fragment
         android:id="@+id/playersSearchFragment"
-        android:name="com.teamfinder.teamfinder.presentation.playerssearch.PlayersSearchFragment"
+        android:name="com.teamfinder.teamfinder.feature.playerssearch.presentation.PlayersSearchFragment"
         android:label="fragment_players_search"
         tools:layout="@layout/fragment_players_search" />
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.teamfinder.teamfinder.presentation.contacts.ContactsFragment"
+        android:name="com.teamfinder.teamfinder.feature.contacts.presntation.ContactsFragment"
         android:label="fragment_contacts"
         tools:layout="@layout/fragment_contacts" />
     <fragment
