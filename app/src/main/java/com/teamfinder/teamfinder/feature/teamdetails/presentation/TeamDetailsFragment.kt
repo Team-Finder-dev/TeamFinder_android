@@ -59,27 +59,27 @@ class TeamDetailsFragment :
         }
         tabMediator?.attach()
         removeTabsIconMargins()
-        binding.teamDetailsTabLayout.addOnTabSelectedListener(object :
-            TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(p0: TabLayout.Tab?) {
-                removeTabsIconMargins()
-            }
+        binding.teamDetailsTabLayout.addOnTabSelectedListener(
+            object : TabLayout.OnTabSelectedListener {
+                override fun onTabSelected(p0: TabLayout.Tab?) {
+                    removeTabsIconMargins()
+                }
 
-            override fun onTabUnselected(p0: TabLayout.Tab?) {
-                removeTabsIconMargins()
-            }
+                override fun onTabUnselected(p0: TabLayout.Tab?) {
+                    removeTabsIconMargins()
+                }
 
-            override fun onTabReselected(p0: TabLayout.Tab?) {
-                removeTabsIconMargins()
+                override fun onTabReselected(p0: TabLayout.Tab?) {
+                    removeTabsIconMargins()
+                }
             }
-
-        })
+        )
     }
 
     private fun removeTabsIconMargins() {
         for (i in 0..binding.teamDetailsTabLayout.tabCount) {
-            val params =
-                binding.teamDetailsTabLayout.getTabAt(i)?.view?.getChildAt(0)?.layoutParams as LinearLayout.LayoutParams?
+            val params = binding.teamDetailsTabLayout.getTabAt(i)?.view?.getChildAt(0)
+                ?.layoutParams as LinearLayout.LayoutParams?
             params?.bottomMargin = 0
             binding.teamDetailsTabLayout.getTabAt(i)?.view?.getChildAt(0)?.layoutParams = params
         }
