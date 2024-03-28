@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/green_dark"
-    tools:context=".presentation.teamdetails.TeamDetailsFragment">
+    tools:context=".feature.teamdetails.presentation.TeamDetailsFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/team_details_back"

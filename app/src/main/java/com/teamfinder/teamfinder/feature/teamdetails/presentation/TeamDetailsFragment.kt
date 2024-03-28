@@ -1,4 +1,4 @@
-package com.teamfinder.teamfinder.presentation.teamdetails
+package com.teamfinder.teamfinder.feature.teamdetails.presentation
 
 import android.os.Bundle
 import android.view.View
@@ -10,11 +10,17 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.teamfinder.teamfinder.R
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentTeamDetailsBinding
+import com.teamfinder.teamfinder.di.ScreenComponent
+import com.teamfinder.teamfinder.feature.searchscreen.presentation.SearchViewModel
+import com.teamfinder.teamfinder.feature.teamdetails.di.DaggerTeamDetailsComponent
 
 class TeamDetailsFragment :
     BaseFragment<FragmentTeamDetailsBinding, TeamDetailsViewModel>(FragmentTeamDetailsBinding::inflate) {
 
-    override val viewModel by viewModels<TeamDetailsViewModel>()
+    override val viewModel by injectViewModel<TeamDetailsViewModel>()
+    override fun diComponent(): ScreenComponent = DaggerTeamDetailsComponent.create()
+
+
     private var tabMediator: TabLayoutMediator? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

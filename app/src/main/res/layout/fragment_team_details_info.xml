@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@color/green_light"
         android:paddingHorizontal="16dp"
-        tools:context=".presentation.teamdetails.info.TeamDetailsInfoFragment">
+        tools:context=".feature.teamdetails.presentation.info.TeamDetailsInfoFragment">
 
         <TextView
             android:id="@+id/team_details_info_contact_title"

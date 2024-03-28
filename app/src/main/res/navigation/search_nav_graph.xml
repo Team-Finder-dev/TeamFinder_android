@@ -21,7 +21,7 @@
         tools:layout="@layout/fragment_contacts" />
     <fragment
         android:id="@+id/teamDetailsFragment"
-        android:name="com.teamfinder.teamfinder.presentation.teamdetails.TeamDetailsFragment"
+        android:name="com.teamfinder.teamfinder.feature.teamdetails.presentation.TeamDetailsFragment"
         android:label="fragment_team_details"
         tools:layout="@layout/fragment_team_details" />
 </navigation>
