@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">TeamFinder</string>
 
-
     <string name="teams">Команды</string>
     <string name="players">Игроки</string>
     <string name="contacts">Контакты</string>
 
+    <string name="team_details_favorite_icon_descr">Favorite icon</string>
+    <string name="team_details_card_location_icon_descr">Location icon</string>
+    <string name="reply">Откликнуться</string>
+    <string name="basic">Основные</string>
+    <string name="info">Инфо</string>
+    <string name="team_details_basic_position_title">Позиция</string>
+    <string name="team_details_basic_format_title">Игровой формат</string>
+    <string name="team_details_basic_gender_title">Пол</string>
+    <string name="team_details_basic_tournament_title">Турнир</string>
+    <string name="team_details_basic_level_title">Уровень</string>
+    <string name="team_details_info_contact_title">Контактное лицо</string>
+    <string name="team_details_info_position_title">Должность</string>
+    <string name="team_details_info_date_title">Дата создания</string>
+    <string name="team_details_info_team_title">Название команды/академии</string>
 
 </resources>

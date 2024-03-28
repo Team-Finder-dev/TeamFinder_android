@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/green_dark"
+    tools:context=".feature.teamdetails.presentation.TeamDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/team_details_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="9dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_top_background"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/team_details_logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="48dp"
+        android:elevation="9dp"
+        android:background="@drawable/shape_teamdetails_logo"
+        android:src="@drawable/team_logo_placeholder"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/team_details_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="122dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green_light">
+
+            <ImageButton
+                android:id="@+id/team_details_card_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/team_details_favorite_icon_descr"
+                android:src="@drawable/ic_star"
+                android:backgroundTint="@color/green_light"
+                app:layout_constraintEnd_toStartOf="@id/team_details_card_arrow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/team_details_card_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/team_details_favorite_icon_descr"
+                android:src="@drawable/ic_arrow_right"
+                android:backgroundTint="@color/green_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/team_details_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_arrow"
+                tools:text="Зенит 1984" />
+
+            <ImageButton
+                android:id="@+id/team_details_card_location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/team_details_card_location_icon_descr"
+                android:src="@drawable/ic_location_pin"
+                android:backgroundTint="@color/green_light"
+                />
+
+            <TextView
+                android:id="@+id/team_details_card_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                tools:text="Санкт-Петербург"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/team_details_card_location_flow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="team_details_card_location_icon, team_details_card_location_text"
+                app:flow_horizontalGap="4dp"
+                app:flow_horizontalStyle="packed"
+                app:flow_verticalBias="0"
+                app:flow_wrapMode="chain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_title" />
+
+            <Button
+                android:id="@+id/team_details_card_reply_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/reply"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:cornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/team_details_card_location_flow"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/team_details_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/green_dark"
+        app:tabTextColor="@color/white"
+        app:tabRippleColor="@color/white"
+        app:tabIndicator="@color/green_dark"
+        app:tabIconTint="@color/white"
+        app:tabBackground="@drawable/teamdetails_tab_shape_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team_details_card" />
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/team_details_tab_layout"/>
+
+    <View
+        android:layout_width="16dp"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/team_details_tab_layout"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/team_details_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team_details_tab_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
