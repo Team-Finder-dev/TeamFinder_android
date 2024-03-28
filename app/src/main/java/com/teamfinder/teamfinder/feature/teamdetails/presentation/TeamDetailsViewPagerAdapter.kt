@@ -7,8 +7,7 @@ import com.teamfinder.teamfinder.feature.teamdetails.presentation.info.TeamDetai
 
 private const val FRAGMENT_QTY = 2
 
-class TeamDetailsViewPagerAdapter(parentFragment: Fragment) :
-    FragmentStateAdapter(parentFragment) {
+class TeamDetailsViewPagerAdapter(parentFragment: Fragment) : FragmentStateAdapter(parentFragment) {
     override fun getItemCount(): Int = FRAGMENT_QTY
 
     override fun createFragment(position: Int): Fragment {

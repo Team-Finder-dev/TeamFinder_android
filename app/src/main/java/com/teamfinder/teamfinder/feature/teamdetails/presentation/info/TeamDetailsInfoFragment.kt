@@ -4,7 +4,7 @@ import androidx.fragment.app.viewModels
 import com.teamfinder.teamfinder.base.BaseFragment
 import com.teamfinder.teamfinder.databinding.FragmentTeamDetailsInfoBinding
 import com.teamfinder.teamfinder.di.ScreenComponent
-import com.teamfinder.teamfinder.feature.teamdetails.di.DaggerTeamDetailsInfoComponent
+import com.teamfinder.teamfinder.feature.teamdetails.di.info.DaggerTeamDetailsInfoComponent
 
 class TeamDetailsInfoFragment :
     BaseFragment<FragmentTeamDetailsInfoBinding, TeamDetailsInfoViewModel>(

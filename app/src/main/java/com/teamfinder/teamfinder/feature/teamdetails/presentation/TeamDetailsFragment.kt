@@ -12,12 +12,12 @@ import com.teamfinder.teamfinder.databinding.FragmentTeamDetailsBinding
 import com.teamfinder.teamfinder.di.ScreenComponent
 import com.teamfinder.teamfinder.feature.teamdetails.di.DaggerTeamDetailsComponent
 
-class TeamDetailsFragment :
-    BaseFragment<FragmentTeamDetailsBinding, TeamDetailsViewModel>(FragmentTeamDetailsBinding::inflate) {
+class TeamDetailsFragment : BaseFragment<FragmentTeamDetailsBinding, TeamDetailsViewModel>(
+    FragmentTeamDetailsBinding::inflate
+) {
 
     override val viewModel by injectViewModel<TeamDetailsViewModel>()
     override fun diComponent(): ScreenComponent = DaggerTeamDetailsComponent.create()
-
 
     private var tabMediator: TabLayoutMediator? = null
 
@@ -79,7 +79,7 @@ class TeamDetailsFragment :
     private fun removeTabsIconMargins() {
         for (i in 0..binding.teamDetailsTabLayout.tabCount) {
             val params = binding.teamDetailsTabLayout.getTabAt(i)?.view?.getChildAt(0)
-                ?.layoutParams as LinearLayout.LayoutParams?
+                ?.layoutParams as? LinearLayout.LayoutParams?
             params?.bottomMargin = 0
             binding.teamDetailsTabLayout.getTabAt(i)?.view?.getChildAt(0)?.layoutParams = params
         }
