@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#000000</color>
-    <color name="black_dark">#181818</color>
-    <color name="black_light">#1C1B1F</color>
-    <color name="black_border">#221A15</color>
 
-    <color name="white">#FFFFFF</color>
-    <color name="white_light">#F8F8F8</color>
-    <color name="white_lightest">#FFFBFE</color>
+    <color name="white">#F8F8F8</color>
 
     <color name="green_light">#174043</color>
     <color name="green_medium">#0F383B</color>
@@ -15,15 +10,10 @@
 
     <color name="green_mist">#445B67</color>
 
-    <color name="gray_border">#606060</color>
-    <color name="gray_background">#666666</color>
-    <color name="gray">#E9E3E133</color>
-    <color name="brown_gray_border">#84746A</color>
-    <color name="gray_mist">#95A2AB</color>
-    <color name="gray_light">#CDCDCD</color>
-    <color name="sand_pink">#D7C3B8</color>
+    <color name="gray">#D9D9D9</color>
+    <color name="gray_disabled">#606060</color>
 
-    <color name="brow_mahogany">#8B4F24</color>
+    <color name="brown_mahogany">#8B4F24</color>
 
     <color name="light_blue">#95C1FF</color>
     <color name="dark_red">#B82F2F</color>
